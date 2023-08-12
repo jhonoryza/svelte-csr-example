@@ -16,11 +16,11 @@
 </script>
 
 <!-- Navigation -->
-<nav class="p-2 bg-gray-900 shadow-xl">
+<nav class="p-2 bg-white shadow-xl">
 	<!-- hamburger -->
 	<button class="outline-none menu-button sm:hidden" on:click={toggleMenu}>
 		<svg
-			class="w-4 text-slate-200"
+			class="w-4 text-slate-700"
 			fill="none"
 			stroke-linecap="round"
 			stroke-linejoin="round"
@@ -35,27 +35,27 @@
 	<div bind:this={menu} class="hidden sm:block">
 		<ul class="flex flex-col sm:flex-row">
 			<li>
-				<a class="mx-2 lowercase text-sm text-white hover:text-slate-400" href="/">
+				<a class="mx-2 lowercase text-sm text-slate-700 hover:text-slate-400" href="/">
 					{config.title}
 				</a>
 			</li>
 			<li>
-				<a class="mx-2 lowercase text-sm text-white hover:text-slate-400" href="/about"> About </a>
+				<a class="mx-2 lowercase text-sm text-slate-700 hover:text-slate-400" href="/about"> About </a>
 			</li>
 			<li>
-				<a class="mx-2 lowercase text-sm text-white hover:text-slate-400" href="/contact">
+				<a class="mx-2 lowercase text-sm text-slate-700 hover:text-slate-400" href="/contact">
 					Contact
 				</a>
 			</li>
-			<li>
+			<!-- <li>
 				<a
-					class="mx-2 lowercase text-sm text-white hover:text-slate-400"
+					class="mx-2 lowercase text-sm text-slate-700 hover:text-slate-400"
 					href="/rss.xml"
 					target="_blank"
 				>
 					RSS
 				</a>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 </nav>
