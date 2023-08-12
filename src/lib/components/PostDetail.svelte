@@ -1,9 +1,8 @@
 <script>
 	/**
-	 * @type {{ title: any; preview: { text: any; }; }}
+	 * @type {{ title: string; content: string; }}
 	 */
 	 export let post
-
 </script>
 
 <div
@@ -12,5 +11,5 @@
     hover:bg-slate-100"
 >
 	<h1 class="text-2xl text-slate-600 text-bold">{post.title}</h1>
-	<p class="text-slate-600">{post.preview.text}</p>
+	<p class="text-slate-600">{@html post.content}</p>
 </div>
